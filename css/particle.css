@@ -1,0 +1,175 @@
+/* IMPORTANDO FUENTES */
+
+@font-face
+{
+    font-family: "Lato";
+    src: url(./fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face
+{
+    font-family: "Roboto";
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+}
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+canvas {
+    display: block;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats, .count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+.containerHeader
+{
+    height: 100vh;
+    background-color: blue;
+    background: linear-gradient( 90deg , #3a47d5 0% , #00d2ff 100% );
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.contenedor
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    /* Ajusta el ancho según tus preferencias */
+    max-width: 600px;
+    /* Ancho máximo para evitar que sea demasiado grande en pantallas muy grandes */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Agrega sombra si lo deseas */
+
+    z-index: 1;
+}
+
+------PRUEBA------
+
+#container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Ajusta el ancho según tus preferencias */
+    max-width: 600px; /* Ancho máximo para evitar que sea demasiado grande en pantallas muy grandes */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Agrega sombra si lo deseas */
+}
+.contenedor h1 {
+    text-align: center;
+}
+.input-section {
+    background-color: #ccc; /* Fondo gris */
+    padding: 10px; /* Espaciado interior */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centrar el contenido en horizontal */
+}
+#chart {
+    width: 100%; /* Hacer que el gráfico se ajuste automáticamente al div */
+    margin-top: 20px;
+}
+#result {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+}
+#generateButton {
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+#generateButton:hover {
+    background-color: darkblue; /* Cambia de color al pasar el ratón */
+}
+
+/* NAVEGACION */
+
+nav
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    padding: .5rem 0;
+    z-index: 1;
+}
+nav .contenedor-nav 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 150px;
+    margin-right: 10px;
+}
+
+.contenedor-nav .containerL
+{
+    display: inherit;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/calculadora.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Tabla de contingencia</title>
+    </head>
+    <body>
+
+        <nav>
+            <div class="contenedor-nav">
+                <div class="containerL">
+                    <img src="img/Escudo_UdeG.svg.png" class="logo">
+                </div>
+            </div>
+        </nav>
+
+        <div class="containerHeader">
+            <div id="particles-js"></div>
+            <div class="contenedor">
+                <div class="containMain">
+                    <textarea id="dataInput" oninput="validateInput(this)" rows="5" cols="40" placeholder="Introducir datos (separados por comas)"></textarea>
+                    <button id="generateButton" onclick="generateTableAndCalculateChiSquare()"><i class="fas fa-pencil-alt"></i> Generar</button>
+                    <button id="generateButton" onclick="graphic()"><i class="fas fa-chart-line"></i> Grafico</button>
+                </div>
+
+                <div class="Container_Generate">
+                    <div id="table"></div>
+                    <div id="chiSquare"></div>
+                </div>
+
+        </div>
+
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
