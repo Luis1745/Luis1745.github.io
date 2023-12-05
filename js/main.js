@@ -17,6 +17,15 @@ function validateInput(input) {
     }
 }
 
+function handleFileUpload(files) {
+    // Aquí puedes agregar la lógica para manejar el archivo subido
+    // Por ejemplo, acceder a los datos del archivo Excel o procesarlo
+    const file = files[0]; // Obtener el primer archivo seleccionado
+    console.log('Nombre del archivo:', file.name);
+    console.log('Tamaño del archivo:', file.size, 'bytes');
+    // Puedes realizar más acciones con 'file' aquí
+}
+
 function generateTableAndCalculateChiSquare() {
     var dataInput = document.getElementById("dataInput").value;
     var rows = dataInput.split("\n");

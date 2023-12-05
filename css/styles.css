@@ -144,6 +144,29 @@ th, td {
     position: static;
 }
 
+.file-upload {
+    display: inline-block;
+    margin-left: 10px; /* Ajusta el espacio entre el botón y el área de carga de archivos según sea necesario */
+}
+
+.file-upload label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #03b500;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.file-upload input[type='file'] {
+    display: none;
+}
+
+.file-upload label:hover{
+    background-color: #028300
+}
+
 .Container_Generate {
     background-color: rgb(128, 128, 128, 0.5);
     border-radius: 15px;
